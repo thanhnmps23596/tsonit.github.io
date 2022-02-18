@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="Báo mới đâyyyyyyy" />
+    <meta property="og:description" content="New - ASM" />
+    <meta property="og:image" content="https://i.imgur.com/RcaVWAn.jpg" />
+    <!-- Favicons -->
+    <meta property="fb:app_id" content="573466916730996" />
+    <meta property="fb:admins" content="100011003941053" />
+    <link rel="shortcut icon" href="https://i.imgur.com/9qvw8bO.jpg">
+
+    <title>Tin tức - ASM1</title>
+    <style>
+        #copyright {
+            text-align: right;
+            width: 45%;
+            float: right;
+        }
+
+        .info {
+            text-align: left;
+            width: 45%;
+            float: left;
+        }
+
+        #logo {
+            height: 42px;
+            width: 220px;
+            margin: 0 34px;
+            display: block;
+            background: url(./image/logox.png) no-repeat;
+            background-size: contain;
+        }
+
+        .social li {
+            background-color: red;
+            padding: 3.5px 3.5px;
+            border-radius: 3px 3px;
+            border: solid 1px rgb(238, 9, 9);
+            margin: 2px 5px;
+        }
+
+        .social li a {
+            color: white;
+        }
+
+        .social li a:hover {
+            color: rgb(190, 7, 7);
+        }
+
+        h2noidung {
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        .noidung {
+            margin-left: 20px;
+        }
+
+        li.views {
+            background: url(https://khoahoc.tv/themes/default/images/views.png) no-repeat left center;
+            padding-left: 20px;
+            display: block;
+        }
+
+        .boxx li {
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .boxx {
+            clear: both;
+            display: block;
+        }
+
+
+        .breadcrumb {
+            line-height: 20px;
+            border: 1px solid #eee;
+            border-width: 1px 0;
+            clear: both;
+        }
+
+        .noidung hr {
+            clear: both;
+            border-bottom: 0 solid #9A9A9A;
+            margin-bottom: 3px;
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+
+        .infobai a {
+            color: red;
+        }
+
+        .infobai a:hover {
+            color: rgb(190, 7, 7);
+        }
+
+        .content-detail {
+            clear: both;
+            display: block;
+            position: relative;
+            margin-bottom: 10px;
+            font-family: 'serif';
+            font-size: 19px;
+            line-height: 31px;
+            color: #000;
+        }
+
+        .content-detail p {
+            margin: 10px 0;
+            font-size: 19px;
+        }
+
+        .content-detail strong {
+            font-weight: 700;
+        }
+
+        .hinh {
+            /*  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;*/
+            display: grid;
+            place-items: center;
+        }
+
+        .hinh p {
+            text-align: center;
+        }
+
+        #ha {
+            max-width: 1080px;
+            height: 408px;
+        }
+
+        .tags {
+            border-top: 1px dotted #eee;
+            padding: 10px 0;
+            clear: both;
+        }
+
+        .more-news {
+            display: block;
+            margin-bottom: 20px;
+            clear: both;
+        }
+
+        .more-news .list-title {
+            font-size: 1.4em;
+            color: red;
+            border-bottom: 1px solid;
+            margin-bottom: 20px;
+        }
+
+        .list-title {
+            font-size: 1.4em;
+            color: #00796b;
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        .more-news li {
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .more-news li {
+            width: 200px;
+            margin: 0px 18px 20px 0;
+            height: 230px;
+            float: left;
+            display: block;
+            overflow: hidden;
+        }
+
+        .more-news li a {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .more-news li .thumb-detail {
+            width: 180px;
+            float: left;
+            height: auto;
+            max-height: 180px;
+            margin-right: 10px;
+            margin-bottom: 0;
+            border-radius: 3px;
+        }
+
+        .more-news li .thumb-detail {
+            text-align: center;
+            height: 130px;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        .more-news li .thumb-detail img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        a.viewmore {
+            display: block;
+            color: #808080;
+            text-align: right;
+            clear: both;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!--1. header -->
+        <div id="header">
+            <div id="toplink">
+                <ul class="social">
+                    <ul>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="reg.html">Đăng ký</a></li>
+                    </ul>
+                    <!-- <li><a href="https://www.facebook.com/thanhson1711" class="icon facebook" target="_blank">&nbsp;f&nbsp;</a></li>-->
+                </ul>
+            </div>
+            <div class="headerleft"><a href="index.html" id="logo" title="LOGO"></a></div>
+            <div id="searchBox">
+                <form id="cse-search-box">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="cof" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input class="q" type="text" name="q" size="55" placeholder="Nhập từ khóa tìm kiếm">
+                    <input class="asearch" type="submit" name="sa" value="Search">
+                </form>
+            </div>
+        </div>
+        <!--2. Menu -->
+        <div>
+            <ul id="topnav">
+                <li class="item all">
+                    <a href="index.html"><img src="image/icons/home.png"> Trang chủ</a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/tech.png"> Công nghệ </a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/earth.png"> Đời sống </a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/sciencex.png"> Khám phá khoa học
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/universe.png"> Khoa học vũ trụ
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/aliens.png">1001 bí ẩn </a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="image/icons/health.png">Y học - Sức khỏe
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--3. Main -->
+        <div class="main">
+            <!--4. Bên trái -->
+            <div class="main-left">
+                <div class="navbox">
+                    <ul id="leftnav" class="navigation clearfix">
+                        <li class="12 tax-cong-nghe-moi">
+                            <a href="./cong-nghe-moi/"> <img src="image/icons/robot.png"> Công nghệ mới
+                            </a>
+                        </li>
+                        <li class="l2 tax-phan-mem">
+                            <a href="./phan-mem/"> <img src="image/icons/cursor.png"> Phần mềm hữu
+                                ích </a>
+                        </li>
+                        <li class="l2 tax-may-tinh">
+                            <a href="./may-tinh/"> <img src="image/icons/laptop.png"> Khoa học máy
+                                tính </a>
+                        </li>
+                        <li class="l2 tax-phat-minh">
+                            <a href="./phat-minh/"> <img src="image/icons/idea.png"> Phát minh khoa
+                                học </a>
+                        </li>
+                        <li class="l2 tax-ai-tri-tue-nhan-tao">
+                            <a href="./ai-tri-tue-nhan-tao/"> <img src="image/icons/robot2.png"> AI - Trí tuệ
+                                nhân tạo </a>
+                        </li>
+                        <li class="l2 tax-kham-pha-khoa-hoc">
+                            <a href="./kham-pha-khoa-hoc/"> <img src="image/icons/science2.png"> Khám phá
+                                khoa học </a>
+                        </li>
+                        <li class="l2 tax-sinh-vat-hoc">
+                            <a href="./sinh-vat-hoc"> <img src="image/icons/microscope.png"> Sinh vật
+                                học </a>
+                        </li>
+                        <li class="l2 tax-khao-co-hoc">
+                            <a href="./khao-co-hoc"> <img src="image/icons/pharaoh.png"> Khảo cổ học
+                            </a>
+                        </li>
+                        <li class="l2 tax-dai-duong-hoc">
+                            <a href="./dai-duong-hoc"> <img src="image/icons/fish.png"> Đại dương học
+                            </a>
+                        </li>
+                        <li class="l2 tax-the-gioi-dong-vat">
+                            <a href="./the-gioi-dong-vat"> <img src="image/icons/elephant.png"> Thế giới
+                                động vật
+                            </a>
+                        </li>
+                        <li class="l2 tax-danh-nhan-the-gioi">
+                            <a href="./danh-nhan-the-gioi"> <img src="image/icons/guests.png"> Danh nhân
+                                thế giới </a>
+                        </li>
+                        <li class="l2 tax-vu-tru">
+                            <a href="./vu-tru"> <img src="image/icons/satellite3.png"> Khoa học
+                                vũ trụ </a>
+                        </li>
+                        <li class="l2 tax-1001-bi-an">
+                            <a href="./1001-bi-an"> <img src="image/icons/alien.png"> 1001 bí ẩn
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--5. Nội dung chính giữa -->
+            <div class="main-content">
+                <div class="noidung">
+                    <h2>"Bàn cờ cát" kỳ lạ xuất hiện ven hồ Mỹ</h2>
+                    <div class="boxx">
+
+                        <ul>
+                            <li class="views"><b>199</b> Chủ nhật, 16/1/2022, 19:26 (GMT+7)</li>
+
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="infobai">
+                        <a href="/">🏠</a> >
+                        <a href="/kham-pha">Khám phá</a> >
+                        <a href="/kham-pha-khoa-hoc">Khám phá khoa học</a>
+                        <hr>
+                    </div>
+
+                    <div class="content-detail">
+
+                        <p><strong>Nước, cát, gió và nhiệt độ thấp tạo nên những cột cát tự nhiên với hình dạng đặc biệt
+                                trên bờ hồ Michigan.</strong></p>
+                        <p>Những <strong>"tác phẩm điêu khắc cát"</strong>
+                            kỳ lạ xuất hiện ven hồ Michigan, Mỹ, đầu tháng 1 thu hút sự chú ý của các nhiếp ảnh
+                            gia.<strong> Sự hình thành của chúng phụ thuộc vào nhiều yếu tố, trong đó có cát, nước và
+                                điều kiện gió</strong>, theo nhà vật lý Daniel Bonn, người đứng đầu Viện Van der
+                            Waals-Zeeman thuộc Đại học Amsterdam.</p>
+
+                        <div class="hinh">
+                            <img id="ha" src="./image/Bancocat-1642324317-4362-1642324649.jpg">
+                            <p>Những cột cát "trang trí" cho bờ hồ Michigan trong công viên Tiscornia, phía sau là hải
+                                đăng North Pier. (Ảnh: Terri Abbott)</p>
+                        </div>
+
+                        <div> <strong>Các cột cát</strong>, còn gọi là <strong>hoodoo</strong>, có chiều cao khác nhau
+                            trong khoảng từ 7,6 cm đến 51 cm, nhiếp ảnh gia Terri Abbott cho biết. Cô trông thấy những
+                            cấu trúc tự nhiên kỳ lạ này trên bãi cát đầy tuyết khi đến công viên Tiscornia ở St. Joseph,
+                            Michigan, hôm 8/1.</p>
+                            <p>Nhiệt độ mùa đông lạnh giá của Michigan đã tạo điều kiện cho những cấu trúc giống quân cờ
+                                hình thành, theo Bonn.<em> "Tôi cho rằng có những phần chất lỏng trong cát đóng băng khi
+                                    trời lạnh"</em>, ông giải thích. Bãi cát ven hồ Michigan là nơi nhiều gió. Khi những
+                                cơn gió đầy cát thổi vào các tảng nước đóng băng này, hai điều dường như đối lập sẽ xảy
+                                ra.</p>
+                            <p><strong>Thứ nhất</strong>, một số hạt cát có thể bám vào tảng băng, khiến nó tăng kích
+                                thước. Điều này tạo ra một cấu trúc giống lâu đài cát gần như hình trụ. <strong>Thứ
+                                    hai,</strong> gió chứa cát có thể làm xói mòn cột cát, lấy đi cát và khiến hình trụ
+                                mang hình dạng bất đối xứng. Một số hạt cát bị đẩy ra từ số cột này sẽ được cuốn đến nơi
+                                khác ven hồ.</p>
+                            <div class="adbox in-article"><ins class="adsbygoogle"
+                                    style="display:block;text-align:center" data-ad-format="fluid"
+                                    data-ad-layout="in-article" data-ad-client="ca-pub-9275417305531302"
+                                    data-ad-slot="6193529024"></ins>
+                                <script>(adsbygoogle = window.adsbygoogle || []).push({})</script>
+                            </div>
+                            <p>Nhiếp ảnh gia Joshua Nowicki cũng bắt gặp cột cát tại công viên Tiscornia vào ngày 7 và
+                                8/1. Anh đã thấy những cấu trúc tương tự trước đây và cho biết, chúng rất hiếm nhưng có
+                                thể xuất hiện vào bất cứ khoảng thời gian nào trong năm với điều kiện có cát ướt và gió
+                                lớn kéo dài vài ngày. Trong phần lớn trường hợp, chúng chỉ cao vài cm, Nowicki cho biết.
+                            </p>
+                            <p>Các <em>"tác phẩm điêu khắc cát"</em> mà Nowicki nhìn thấy năm nay nằm trong số những tác
+                                phẩm cao nhất anh từng chụp, cột lớn nhất cao khoảng 38 cm và đường kính vài cm.<em>
+                                    "Dọc theo bờ hồ, có ít nhất 6 cụm với 30 cột cát trở lên trong mỗi cụm"</em>, anh
+                                nói.</p>
+                            <p>Hầu hết cột cát không tồn tại lâu. Thông thường, trong vòng vài ngày gió sẽ hoàn toàn bào
+                                mòn hoặc làm đổ sập chúng, theo Nowicki. Nếu nhiệt độ tăng lên trên ngưỡng đóng băng,
+                                chúng cũng sẽ vỡ vụn. Ngoài ra, vào mùa đông, chúng sẽ sớm bị tuyết phủ kín.</p>
+                            <p>Nowicki cho biết, các cột cát tại công viên Tiscornia đã sụp đổ đầu tuần này khi trời bắt
+                                đầu ấm lên.<em> "Thời gian tồn tại ngắn khiến chúng trở nên rất đặc biệt. Bạn phải có
+                                    mặt ở đó đúng lúc để nhìn thấy chúng khi hình dạng vẫn còn rõ ràng", </em>anh nói.
+                            </p>
+
+                        </div>
+                        <p>Cập nhật: 17/01/2022 Theo VnExpress</p>
+
+                        <div class="boxxs">
+                            <hr>
+                            <ul>
+                                <li class="views"><b>199</b> Chủ nhật, 16/1/2022, 19:26 (GMT+7)</li>
+
+                            </ul>
+                        </div>
+
+                        <!--like,share-->
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=573466916730996&autoLogAppEvents=1"
+                            nonce="8mfbOapU"></script>
+                        <div class="fb-like" data-href="https://code.thanhsonit.me" data-width=""
+                            data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
+                        <div class="tags"><span>Xem thêm:</span> <a
+                                href="/s/t%C3%A1c+ph%E1%BA%A9m+%C4%91i%C3%AAu+kh%E1%BA%AFc+c%C3%A1t">tác phẩm điêu khắc
+                                cát</a> <a href="/s/b%C3%A0n+c%E1%BB%9D">bàn cờ</a> <a
+                                href="/s/b%C3%A0n+c%E1%BB%9D+c%C3%A1t">bàn cờ cát</a> <a
+                                href="/s/c%E1%BA%A5u+tr%C3%BAc+gi%E1%BB%91ng+qu%C3%A2n+c%E1%BB%9D">cấu trúc giống quân
+                                cờ</a> <a href="/s/hoodoo">hoodoo</a>
+                        </div>
+
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=573466916730996&autoLogAppEvents=1"
+                            nonce="RB5NvAIt"></script>
+                        <div class="fb-comments" data-href="https://code.thanhsonit.me" data-width="640"
+                            data-numposts="10"></div>
+
+
+
+
+
+
+
+                        <div class="more-news latest">
+                            <div class="list-title">Khám phá</div>
+                            <ul class="clearfix">
+                                <li><a href="/linh-cau-nau-hoang-so-bo-chay-khi-gap-su-tu-cai-118770"> <span
+                                            class="thumb-detail"> <img
+                                                src="./image/linh-cau-va-su-tu-cai-200.jpg"
+                                                alt="Linh cẩu nâu hoảng sợ bỏ chạy khi gặp sư tử cái"> </span>
+                                        <span>Linh cẩu nâu hoảng sợ bỏ chạy khi gặp sư tử cái</span> </a></li>
+                                <li><a href="/robot-sao-hoa-lay-mau-da-sau-su-co-tac-hong-118772"> <span
+                                            class="thumb-detail"> <img
+                                                src="./image/robot-Perseverance-200.jpg"
+                                                alt="Robot sao Hỏa lấy mẫu đá sau sự cố &quot;tắc họng&quot;"> </span>
+                                        <span>Robot sao Hỏa lấy mẫu đá sau sự cố "tắc họng"</span> </a></li>
+                                <li><a href="/ram-thang-gieng-tai-sao-goi-la-tet-nguyen-tieu-78213"> <span
+                                            class="thumb-detail"> <img
+                                                src="./image/le-hoi-den-long-200.jpg"
+                                                alt="Rằm tháng Giêng tại sao gọi là Tết Nguyên Tiêu?"> </span> <span>Rằm
+                                            tháng Giêng tại sao gọi là Tết Nguyên Tiêu?</span> </a></li>
+                                <li><a
+                                        href="/trai-dat-tung-hung-chiu-luong-buc-xa-cuc-tim-khung-khiep-gap-10-lan-uoc-doan-truoc-day-118769">
+                                        <span class="thumb-detail"> <img
+                                                src="./image/trai-dat-200.jpg"
+                                                alt="Trái đất từng hứng chịu lượng bức xạ cực tím khủng khiếp, gấp 10 lần ước đoán trước đây">
+                                        </span> <span>Trái đất từng hứng chịu lượng bức xạ cực tím khủng khiếp, gấp 10
+                                            lần ước đoán trước đây</span> </a></li>
+                                <li><a
+                                        href="/chuyen-nang-cung-nu-hieu-thao-su-tich-tet-nguyen-tieu--ram-thang-gieng-69798">
+                                        <span class="thumb-detail"> <img
+                                                src="./image/tet-nguyen-tieu-200.jpg"
+                                                alt="Chuyện nàng cung nữ hiếu thảo: Sự tích Tết Nguyên Tiêu – Rằm tháng Giêng">
+                                        </span> <span>Chuyện nàng cung nữ hiếu thảo: Sự tích Tết Nguyên Tiêu – Rằm tháng
+                                            Giêng</span> </a></li>
+                                <li><a href="/nhung-le-vat-khong-the-thieu-khi-cung-ram-thang-gieng-78159"> <span
+                                            class="thumb-detail"> <img
+                                                src="./image/mam-cung-ram-thang-rieng-200.jpg"
+                                                alt="Những lễ vật không thể thiếu khi cúng rằm tháng Giêng"> </span>
+                                        <span>Những lễ vật không thể thiếu khi cúng rằm tháng Giêng</span> </a></li>
+                            </ul><a href="/kham-pha" class="viewmore">Xem thêm</a>
+                        </div>
+
+                        <div class="more-news">
+                            <div class="list-title">Khám phá khoa học</div>
+                            <ul class="clearfix">
+                                <li><a href="/bi-an-ve-nhung-hinh-ve-co-dai-o-peru-da-co-loi-giai-96982"> <span
+                                            class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/hinh-ve-tren-sa-mac-200.jpg"
+                                                data-src="./image/hinh-ve-tren-sa-mac-200.jpg"
+                                                alt="Bí ẩn về những hình vẽ cổ đại ở Peru đã có lời giải?"
+                                                data-was-processed="true"> </span> <span>Bí ẩn về những hình vẽ cổ đại ở
+                                            Peru đã có lời giải?</span> </a></li>
+                                <li><a
+                                        href="/nguyen-nhan-khien-ban-met-moi-khi-phai-di-chuyen-hang-gio-bang-o-to-va-may-bay-97792">
+                                        <span class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/di-o-to-200.jpg"
+                                                data-src="./image/di-o-to-200.jpg"
+                                                alt="Nguyên nhân khiến bạn mệt mỏi khi phải di chuyển hàng giờ bằng ô tô và máy bay"
+                                                data-was-processed="true"> </span> <span>Nguyên nhân khiến bạn mệt mỏi
+                                            khi phải di chuyển hàng giờ bằng ô tô và máy bay</span> </a></li>
+                                <li><a href="/ly-giai-hien-tuong-dua-hau-bong-dung-phat-no-53443"> <span
+                                            class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/dua-hau-phat-no2.jpg"
+                                                data-src="./image/dua-hau-phat-no2.jpg"
+                                                alt="Lý giải hiện tượng dưa hấu bỗng dưng phát nổ"
+                                                data-was-processed="true"> </span> <span>Lý giải hiện tượng dưa hấu bỗng
+                                            dưng phát nổ</span> </a></li>
+                                <li><a href="/tiet-lo-bi-an-trong-nhung-phut-bay-cuoi-cung-cua-mh370-67434"> <span
+                                            class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/mh370-200.jpg"
+                                                data-src="./image/mh370-200.jpg"
+                                                alt="Tiết lộ bí ẩn trong những phút bay cuối cùng của MH370"
+                                                data-was-processed="true"> </span> <span>Tiết lộ bí ẩn trong những phút
+                                            bay cuối cùng của MH370</span> </a></li>
+                                <li><a href="/loi-di-bo-duoc-menh-danh-con-duong-chet-choc-o-anh-110051"> <span
+                                            class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/con-duong-chet-choc-200.jpg"
+                                                data-src="./image/con-duong-chet-choc-200.jpg"
+                                                alt="Lối đi bộ được mệnh danh &quot;con đường chết chóc&quot; ở Anh"
+                                                data-was-processed="true"> </span> <span>Lối đi bộ được mệnh danh "con
+                                            đường chết chóc" ở Anh</span> </a></li>
+                                <li><a href="/co-the-ban-chua-biet-co-the-chung-ta-co-den-hai-bo-nao-92977"> <span
+                                            class="thumb-detail"> <img class="lazy loaded"
+                                                src="./image/con-nguoi-co-hai-bo-nao-200.jpg"
+                                                data-src="./image/con-nguoi-co-hai-bo-nao-200.jpg"
+                                                alt="Có thể bạn chưa biết: Cơ thể chúng ta có đến hai bộ não!"
+                                                data-was-processed="true"> </span> <span>Có thể bạn chưa biết: Cơ thể
+                                            chúng ta có đến hai bộ não!</span> </a></li>
+                            </ul><a href="/kham-pha-khoa-hoc" class="viewmore">Xem thêm</a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--6. Bên phải -->
+            <div class="main-right">
+                <div class="hot">Được Quan Tâm Nhất</div>
+                <!--7. Nội dung quan tâm nhiều nhất-->
+                <a href="/"> <img src="image/tho-me-tan-cong-ran-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Thỏ mẹ điên cuồng tấn công rắn độc để bảo vệ con
+                    </a></p>
+
+                <hr>
+
+                <a href="/"> <img src="image/nuoc-bi-hut-xuong-ranh-mariana-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        3 tỷ tấn nước biển bị nuốt chửng mỗi năm: "Thủ phạm" gầm lên từ 10.000m dưới đáy đại dương
+                    </a></p>
+                <hr>
+
+                <a href="/"> <img src="image/xuong-rong-bien-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Bức tượng thời La Mã tồn tại trong thời gian dài nhờ được vùi trong lớp sét.
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="image/phong-mat-troi-nhan-tao-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Netizen chia sẻ video Mặt trời nhân tạo được đưa lên bầu trời Trung Quốc, sự thật là gì?
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="image/xuong-rong-bien-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Phát hiện "rồng" dưới đáy biển, các chuyên gia vẫn chưa thể tiếp cận vì lý do bất ngờ
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="image/ran-duoi-chuong-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Video: Hãi hùng cảnh rắn đuôi chuông cắn ngập hai răng nanh và tự tiêm nọc độc vào cơ thể mình
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="image/xuong-rong-bien-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Trái đất lọt vào "bong bóng hư không" rộng 1.000 năm ánh sáng
+                    </a></p>
+
+            </div>
+        </div>
+        <!--8. Chân trang -->
+        <div id="footer">
+            <div class="info"><a href="index.html">Trang chủ</a> . <a href="#">Bảo mật</a> . <a href="#" rel="#">Liên
+                    hệ</a> . <a href="https://www.facebook.com/thanhson1711" target="_blank" rel="nofollow">Facebook</a>
+                .</div>
+            <div id="copyright"> Copyright © 2022 <a href="https://facebook.com/thanhson1711">ThanhSon</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

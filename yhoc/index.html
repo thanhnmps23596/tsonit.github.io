@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta property="og:title" content="Báo mới đâyyyyyyy" />
+    <meta property="og:description" content="New - ASM" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta property="og:../image" content="https://i.imgur.com/RcaVWAn.jpg" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="https://i.imgur.com/9qvw8bO.jpg">
+    <title>Y học</title>
+    <style>
+        #copyright {
+            text-align: right;
+            width: 45%;
+            float: right;
+        }
+
+        .info {
+            text-align: left;
+            width: 45%;
+            float: left;
+        }
+
+        #logo {
+            height: 42px;
+            width: 220px;
+            margin: 0 34px;
+            display: block;
+            background: url(./../image/logox.png) no-repeat;
+            background-size: contain;
+        }
+
+        .social li {
+            background-color: red;
+            padding: 3.5px 3.5px;
+            border-radius: 3px 3px;
+            border: solid 1px rgb(238, 9, 9);
+            margin: 2px 5px;
+        }
+
+        .social li a {
+            color: white;
+        }
+
+        .social li a:hover {
+            color: rgb(190, 7, 7);
+        }
+
+
+
+
+        .mySlides {
+            display: none
+        }
+
+        .mySlides img {
+            vertical-align: middle;
+            max-width: 97%;
+        }
+
+        /* Slideshow container */
+
+        .slideshow-container {
+            max-width: 100%;
+            height: 11%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            font-size: 17px;
+            padding: 8px 15px;
+            margin-left: 58px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 8px;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+/*Bài viết */ 
+        .tieudexx {
+            margin-left: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .tieudexx h1 {
+            font-size: 30px;
+        }
+
+        .tieudexx x {
+            font-size: 19px;
+            color: rgb(87, 82, 82);
+        }
+        .navbar {
+   
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.clearfix{
+    display:block;
+}
+
+.navbar .title {
+    display: none;
+    font-size: 1.4em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.navbar .navigation li {
+    width: auto;
+    float: none;
+}
+.hrxx{
+    border-bottom: 1px solid #eee;
+}
+.navbar .navigation li {
+    line-height: 20px;
+    width: 50%;
+    float: left;
+}
+.navbar .navigation li a {
+    display: block;
+    /* padding: 5px 0; */
+    padding-top: 5px;
+}
+.navbar .navigation li p{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.navbar .navigation li img {
+    vertical-align: middle;
+    /* padding-right: 10px; */
+    margin-right:10px;
+    
+    height: 32px;
+    width: 32px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!--1. header -->
+        <div id="header">
+            <div id="toplink">
+                <ul class="social">
+                    <ul>
+                        <li><a href="../login.php">Đăng nhập</a></li>
+                        <li><a href="../reg.php">Đăng ký</a></li>
+                    </ul>
+                    <!-- <li><a href="https://www.facebook.com/thanhson1711" class="icon facebook" target="_blank">&nbsp;f&nbsp;</a></li>-->
+                </ul>
+            </div>
+            <div class="headerleft"><a href="../index.php" id="logo" title="LOGO"></a></div>
+            <div id="searchBox">
+                <form id="cse-search-box">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="cof" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input class="q" type="text" name="q" size="55" placeholder="Nhập từ khóa tìm kiếm">
+                    <input class="asearch" type="submit" name="sa" value="Search">
+                </form>
+            </div>
+        </div>
+        <!--2. Menu -->
+        <div>
+            <ul id="topnav">
+                <li class="item all">
+                    <a href="../index.html"><img src="../image/icons/home.png"> Trang chủ</a>
+                </li>
+                <li class="item">
+                    <a href="../cong-nghe"><img src="../image/icons/tech.png"> Công nghệ </a>
+                </li>
+                <li class="item">
+                    <a href="../doi-song/"><img src="../image/icons/earth.png"> Đời sống </a>
+                </li>
+                <li class="item">
+                    <a href="../kham-pha-y-hoc"><img src="../image/icons/sciencex.png"> Khám phá khoa học
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="../vu-tru"><img src="../image/icons/universe.png"> Khoa học vũ trụ
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="../1001-bi-an"><img src="../image/icons/aliens.png">1001 bí ẩn </a>
+                </li>
+                <li class="item">
+                    <a href="../yhoc"><img src="../image/icons/health.png">Y học - Sức khỏe
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--3. Main -->
+        <div class="main">
+            <!--4. Bên trái -->
+            <div class="main-left">
+                <div class="navbox">
+                    <ul id="leftnav" class="navigation clearfix">
+                        <li class="12 tax-cong-nghe-moi">
+                            <a href="../cong-nghe-moi/"> <img src="../image/icons/robot.png"> Công nghệ mới
+                            </a>
+                        </li>
+                        <li class="l2 tax-phan-mem">
+                            <a href="../phan-mem/"> <img src="../image/icons/cursor.png"> Phần mềm hữu
+                                ích </a>
+                        </li>
+                        <li class="l2 tax-may-tinh">
+                            <a href="../may-tinh/"> <img src="../image/icons/laptop.png"> Khoa học máy
+                                tính </a>
+                        </li>
+                        <li class="l2 tax-phat-minh">
+                            <a href="../phat-minh/"> <img src="../image/icons/idea.png"> Phát minh khoa
+                                học </a>
+                        </li>
+                        <li class="l2 tax-ai-tri-tue-nhan-tao">
+                            <a href="../ai-tri-tue-nhan-tao/"> <img src="../image/icons/robot2.png"> AI - Trí tuệ
+                                nhân tạo </a>
+                        </li>
+                        <li class="l2 tax-kham-pha-khoa-hoc">
+                            <a href="../kham-pha-khoa-hoc/"> <img src="../image/icons/science2.png"> Khám phá
+                                khoa học </a>
+                        </li>
+                        <li class="l2 tax-sinh-vat-hoc">
+                            <a href="../sinh-vat-hoc"> <img src="../image/icons/microscope.png"> Sinh vật
+                                học </a>
+                        </li>
+                        <li class="l2 tax-khao-co-hoc">
+                            <a href="../khao-co-hoc"> <img src="../image/icons/pharaoh.png"> Khảo cổ học
+                            </a>
+                        </li>
+                        <li class="l2 tax-dai-duong-hoc">
+                            <a href="../dai-duong-hoc"> <img src="../image/icons/fish.png"> Đại dương học
+                            </a>
+                        </li>
+                        <li class="l2 tax-the-gioi-dong-vat">
+                            <a href="../the-gioi-dong-vat"> <img src="../image/icons/elephant.png"> Thế giới
+                                động vật
+                            </a>
+                        </li>
+                        <li class="l2 tax-danh-nhan-the-gioi">
+                            <a href="../danh-nhan-the-gioi"> <img src="../image/icons/guests.png"> Danh nhân
+                                thế giới </a>
+                        </li>
+                        <li class="l2 tax-vu-tru">
+                            <a href="../vu-tru"> <img src="../image/icons/satellite3.png"> Khoa học
+                                vũ trụ </a>
+                        </li>
+                        <li class="l2 tax-1001-bi-an">
+                            <a href="../1001-bi-an"> <img src="../image/icons/alien.png"> 1001 bí ẩn
+                            </a>
+                            </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--5. Nội dung chính giữa -->
+            <div class="main-content">
+
+                <div class="tieudexx">
+                    <h1>Y học</h1>
+                    <x> Y học sẽ được cập nhật tin tức một cách nhanh chóng </x>
+                </div>
+                
+
+
+
+              
+                
+
+                <a href="../bai2.html"><img src="../image/Droneset-1642319481-8827-1642320012.jpg" alt=""></a>
+
+                <a href="../bai2.html" class="tieude">Drone cất hạ cánh thẳng đứng bằng đuôi</a>
+                <p>
+                    Drone Vetal có thiết kế 'ngồi trên đuôi' độc đáo với tốc độ tối đa 90 km/h và thời gian bay 60 phút
+                    sau một lần sạc.
+                </p>
+                
+
+               
+
+                <hr>
+
+                <a href="../bai4.html"> <img src="../image/songthanset-1642304368-9563-1642304794.jpg" alt=""></a>
+
+                <a href="../bai4.html" class="tieude">Tại sao sóng thần do núi lửa khó dự đoán?</a>
+                <p>
+                    Sóng thần do núi lửa gây ra, giống như thảm họa tại Tonga hôm 15/1, gây khó khăn cho giới khoa học
+                    vì tính phức tạp.
+                </p>
+
+                <hr>
+              
+                <a href="../bai7.html"> <img src="../image/VNEVehiOK-1642239966-5720-1642240209.jpg" alt=""></a>
+
+                <a href="../bai7.html" class="tieude">Máy bay điện cất hạ cánh thẳng đứng nhỏ nhất thế giới</a>
+                <p>
+                    Công ty SkyDrive phát triển phương tiện bay cá nhân có thể bay xa 19 km trong một lần sạc, giúp
+                    người sử dụng tránh tắc nghẽn giao thông.
+                </p>
+
+               
+
+        
+
+
+            </div>
+            <!--6. Bên phải -->
+            <div class="main-right">
+                <div class="hot">Được Quan Tâm Nhất</div>
+                <!--7. Nội dung quan tâm nhiều nhất-->
+                <a href="/"> <img src="../image/tho-me-tan-cong-ran-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Thỏ mẹ điên cuồng tấn công rắn độc để bảo vệ con
+                    </a></p>
+
+                <hr>
+
+                <a href="/"> <img src="../image/nuoc-bi-hut-xuong-ranh-mariana-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        3 tỷ tấn nước biển bị nuốt chửng mỗi năm: "Thủ phạm" gầm lên từ 10.000m dưới đáy đại dương
+                    </a></p>
+                <hr>
+
+                <a href="/"> <img src="../image/ho-ngam-minh-trong-nuoc-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+
+                        Vì sao hổ không sợ nước, rất thích bơi và bơi giỏi?Vì sao hổ không sợ nước, rất thích bơi và bơi
+                        giỏi?
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="../image/phong-mat-troi-nhan-tao-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Netizen chia sẻ video Mặt trời nhân tạo được đưa lên bầu trời Trung Quốc, sự thật là gì?
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="../image/xuong-rong-bien-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Phát hiện "rồng" dưới đáy biển, các chuyên gia vẫn chưa thể tiếp cận vì lý do bất ngờ
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="../image/ran-duoi-chuong-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Video: Hãi hùng cảnh rắn đuôi chuông cắn ngập hai răng nanh và tự tiêm nọc độc vào cơ thể mình
+                    </a></p>
+                <hr>
+                <a href="/"> <img src="../image/xuong-rong-bien-200-size-80x80-znd.jpg" alt=""></a>
+                <p> <a href="#" class="tieudex">
+                        Trái đất lọt vào "bong bóng hư không" rộng 1.000 năm ánh sáng
+                    </a></p>
+
+            </div>
+        </div>
+        <!--8. Chân trang -->
+        <div id="footer">
+            <div class="info"><a href="/">Trang chủ</a> . <a href="#">Bảo mật</a> . <a href="#" rel="#">Liên hệ</a> . <a
+                    href="https://www.facebook.com/thanhson1711" target="_blank" rel="nofollow">Facebook</a> .</div>
+            <div id="copyright"> Copyright © 2022 <a href="https://facebook.com/thanhson1711">ThanhSon</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

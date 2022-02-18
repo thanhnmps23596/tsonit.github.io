@@ -1,0 +1,305 @@
+ /*------------1.Main  body-----------*/
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    background: #fff;
+}
+
+/*------------2.Thẻ a herf - chỉnh hover a - xóa dấu chấm-----------*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+ul,li,ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+/*------------3.Page nguyên code-----------*/
+.page {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    background: white;
+}
+
+/*------------4. Header và logo-----------*/
+#header {
+    position: relative;
+    padding: 10px 0
+}
+.social {
+    position: absolute;
+    right: 10px;
+    bottom: 12px
+}
+
+.social li {
+    float: left;
+    display: inline
+}
+
+.social .icon {
+    width: 32px;
+    height: 32px;
+    content: "";
+    margin-right: 10px;
+    text-indent: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block
+}
+
+.social .facebook {
+    background: #4e69a2;
+    width: auto;
+    text-indent: 0;
+    color: #fff;
+    line-height: 32px;
+    padding: 0 10px;
+    border-radius: 3px
+}
+
+.social .facebook:first-letter {
+    font-weight: bold
+}
+
+.social .facebook:hover {
+    background: #2950a6
+}
+#logo {
+    height: 42px;
+    width: 220px;
+    margin: 0 34px;
+    display: block;
+    background: url(./image/logox.png) no-repeat;
+    background-size: contain;
+}
+#searchBox {
+    position: absolute;
+    bottom: 16px;
+    right: 340px
+}
+
+#searchBox form {
+    text-align: center
+}
+
+#searchBox .q {
+    display: block;
+    line-height: 26px;
+    width: 300px;
+    border: 1px solid red;
+    height: 26px;
+    margin: 0;
+    float: left;
+    padding: 2px;
+    border-radius: 3px 0 0 3px
+}
+
+#searchBox .asearch {
+    text-align: center;
+    display: block;
+    background: red;
+    color: #fff;
+    width: 80px;
+    cursor: pointer;
+    float: left;
+    border: solid 1px red;
+    margin: 0;
+    height: 32px;
+    border-radius: 0 3px 3px 0
+}
+/*------------5.Menu-----------*/
+
+#topnav {
+    background: red;
+    margin-left: 35px;
+    margin-right: 14px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden
+}
+
+#topnav li {
+    display: block;
+    float: left;
+    position: relative
+}
+
+#topnav li.item>a {
+    padding: 0 20px;
+    font-size: 17px;
+    color: #fff;
+    
+}
+
+#topnav li.item>a:hover {
+    color: rgb(190, 7, 7);
+}
+#topnav li.item img{
+    width:19px;
+    height:19px;
+    vertical-align: -1.5px;
+    
+}
+/*---------------6. Main (Content,left,right)-----------------*/
+.main {
+    padding: 15px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+/* main nội dung giữa*/
+
+.main-content {
+    width: 740px;
+    display: block;
+    min-height: 1500px
+}
+
+.main-content img {
+    float: left;
+    margin:5px 20px 10px 20px;
+   /* margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 10px; */
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+hr {
+    clear: both;
+    border-bottom: 1px solid #EFEEEF;
+    margin-bottom: 12px;
+    margin-left: 15px;
+}
+
+.main-content p {
+    font-size: 10pt;
+    text-align: justify;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-right: 80px;
+    word-wrap: break-word;
+}
+
+.tieude {
+    font-size: 17pt;
+    
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+/* Main trái */
+.main-left {
+    width: 200px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.navbox {
+    margin-bottom: 20px;
+    padding-bottom: 20px
+}
+
+.navbox .title {
+    font-size: 1.4em;
+    padding-bottom: 5px;
+    /*color: #00796b;
+    border-bottom: 1px solid #00796b;*/
+}
+
+.navbox .navigation li {
+    line-height: 20px;
+    float: none
+}
+
+.navbox .navigation li a {
+    display: block;
+    padding: 8px 0;
+    line-height: 24px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap
+}
+
+.navbox .navigation li img {
+    vertical-align: top;
+    padding-right: 5px;
+    height: 24px;
+    width: 24px
+}
+
+/* Main phải */
+
+.main-right {
+    width: 340px;
+    min-height: 1500px;
+}
+
+.hot {
+    font-size: 25px;
+    color: red;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-left:14px;
+}
+
+.main-right img {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 8px;
+}
+
+.main-right p {
+    font-size: 12pt;
+    padding-bottom: 10px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+/* Bài viết */
+.video{
+    position:relative;
+    padding-top:50%;
+}
+.videox{
+    width:560px;
+    height:280px;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+/* Footer chân trang */
+
+#footer {
+    text-align: center;
+    padding: 5px 0;
+    display: block;
+    position: relative;
+    border-top: 1px solid red;
+    margin-right: 15px;
+    margin-left: 34px;
+    color: gray;
+    background: #fff;
+}
