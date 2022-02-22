@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Login</title>
+<style>
+
+body {
+  background-color: #c0c0c0;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: 0;
+  min-block-size: 500px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.align {
+  display: grid;
+  place-items: center;
+  padding-top:80px;
+}
+.button {
+  background-color: #f95252;
+  color: #fff;
+  padding: 4px 24px;
+}
+.button:hover {
+  background-color: #b80303;
+}
+
+.login {
+  width: 400px;
+}
+
+.login_header {
+  background-color: #f95252;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  padding: 1px 30px;
+}
+.login_form {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #777;
+  display: grid;
+ gap: 20px; /*cho cái form nó rộng ra*/ 
+  padding: 20px 26px;
+}
+
+.login input {
+  border-radius: 1px;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.login input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+</style>
+</head>
+<body class="align">
+    <div class="login">
+      <div class="login_header">
+        <h2>Login</h2>
+      </div>
+  
+      <form action="#" class="login_form" method="POST">
+  
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="nguyenthanhsont123@gmail.com">
+        </div>
+  
+        <div>
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" name="password" placeholder="password">
+        </div>
+        <div>
+            <input type="checkbox" id="remember" name="remember"> Remember me?
+        </div>
+        <div>
+          <input class="button" type="submit" value="Sign In">
+        </div>
+  
+      </form>
+  
+    </div>
+</body>
+</html>

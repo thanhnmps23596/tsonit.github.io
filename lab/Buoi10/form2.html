@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 bài 2</title>
+    <style>
+ body {
+  background-color: #c0c0c0;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: 0;
+  min-block-size: 500px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.align {
+  display: grid;
+  place-items: center;
+  padding-top:80px;
+}
+.button {
+  background-color: #f95252;
+  color: #fff;
+  padding: 4px 24px;
+}
+.button:hover {
+  background-color: #b80303;
+}
+
+.reg {
+  width: 400px;
+}
+
+.reg_header {
+  background-color: #f95252;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  padding: 1px 30px;
+}
+.reg_form {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #777;
+  display: grid;
+ gap: 20px; /*cho cái form nó rộng ra*/ 
+  padding: 20px 26px;
+}
+
+.reg input {
+  border-radius: 1px;
+}
+
+.reg input[type="text"], 
+.reg input[type="password"], .reg input[type="sex"],
+.reg input[type="date"], .reg input[type="diem"],
+.reg input[type="sothich"] {
+  background-color: #eee;
+  color: #ccc;
+  padding: 4px 10px;
+  width: 94%;
+  border-radius: 4px;
+}
+#browser, #diem{
+    border-radius: 5px gray;
+    background-color: #EEEEEE;
+    
+}
+.reg input[placeholder="Tìm kiếm..."]{
+  color:red;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+.reg input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+#st{
+    margin-left:8px;
+}
+#hu:focus{
+background-color:yellow;
+box-shadow:0 0 3px red;
+border:1px solid yellow
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <body class="align">
+        <div class="reg">
+          <div class="reg_header">
+            <h2>REG</h2>
+          </div>
+      
+       
+
+          <form action="#" class="reg_form" method="POST" enctype="multipart/form-data">
+         <div>
+          <input class="search" type="text" placeholder="Tìm kiếm...">
+         </div>
+            <div>
+              <label for="name">Họ và tên</label>
+              <input type="text" id="hu" name="email" placeholder="Nguyễn Thành Sơn">
+            </div>
+      
+            <div>
+              <fieldset><legend> <label for="sex" >Giới tính</label></legend>
+                <input type="radio" id="nam" name="sex" value="nam"> Nam
+                <input type="radio" id="nu" name="sex" value="nu"> Nữ
+                <input type="radio" id="khac" name="sex" value="khac"> Khác 
+           </fieldset> </div>
+            <div>
+                <label for="ngaysinh">Ngày sinh</label>
+                <input type="date" id="hu" name="ngaysinh" class="image">
+            </div>
+            <div>
+                <label for="diem" >Điểm</label>
+                <input type="number" min="0" max="10" step="0.25" id="diem">
+            </div>
+            <div>
+                <label for="browser">Nghề nghiệp:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                   <option value="Học sinh">
+                    <option value="Giáo viên">
+                        <option value="CEO">
+                            <option value="Làm tự do">
+                                <option value="Ăn ngủ nghỉ">
+                </datalist>
+            </div>
+            <div>
+             <fieldset> <legend><label for="sothich"> Sở thích </label></legend> 
+          <input type="radio" id="st" checked> Thể thao
+                    <input type="radio" id="st" > Du lịch
+                    <input type="radio" id="st" > Âm nhạc
+                    <input type="radio" id="st" > Ẩm thực 
+              </fieldset>   </div>
+                <div>
+                    <label for="note"> Ghi chú</label>
+                    <textarea name="note" id="hu" row="5" cols="47" style="resize:none;"></textarea>
+                </div>
+            
+            <div>
+              <input class="button" type="submit" value="Đăng ký">
+            </div>
+      
+          </form>
+      
+        </div>
+</body>
+</html>

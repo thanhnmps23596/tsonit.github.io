@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9 bài 2</title>
+    <style>
+ body {
+  background-color: #c0c0c0;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: 0;
+  min-block-size: 500px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.align {
+  display: grid;
+  place-items: center;
+  padding-top:80px;
+}
+.button {
+  background-color: #f95252;
+  color: #fff;
+  padding: 4px 24px;
+}
+.button:hover {
+  background-color: #b80303;
+}
+
+.reg {
+  width: 400px;
+}
+
+.reg_header {
+  background-color: #f95252;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  padding: 1px 30px;
+}
+.reg_form {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #777;
+  display: grid;
+ gap: 20px; /*cho cái form nó rộng ra*/ 
+  padding: 20px 26px;
+}
+
+.reg input {
+  border-radius: 1px;
+}
+
+.reg input[type="text"],
+.reg input[type="password"], .reg input[type="sex"],
+.reg input[type="image"], .reg input[type="quoctich"],
+.reg input[type="sothich"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 94%;
+  border-radius: 4px;
+}
+.quoctich , .image{
+     border-radius: 10px;
+     margin: 2px;
+}
+.reg input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    
+
+    <body class="align">
+        <div class="reg">
+          <div class="reg_header">
+            <h2>REG</h2>
+          </div>
+      
+          <form action="#" class="reg_form" method="POST" enctype="multipart/form-data">
+      
+            <div>
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="email" placeholder="Nguyễn Thành Sơn">
+            </div>
+      
+            <div>
+                <label for="email">Giới tính</label>
+                <input type="radio" id="nam" name="sex" value="nam"> Nam
+                <input type="radio" id="nu" name="sex" value="nu"> Nữ
+                <input type="radio" id="khac" name="sex" value="khac"> Khác 
+            </div>
+            <div>
+                <label for="image">Hình ảnh</label>
+                <input type="file" name="image" class="image">
+            </div>
+            <div>
+                <label for="quoctich" >Quốc tịch</label>
+                <select class="quoctich">
+                    <option>Việt Nam</option>
+                    <option>Nước ngoài</option>
+                </select>
+            </div>
+            <div>
+                <label for="sothich"> Sở thích </label>
+           <input type="radio" id="tt" checked> Thể thao
+                    <input type="radio" id="dl" > Du lịch
+                    <input type="radio" id="ms" > Âm nhạc
+                    <input type="radio" id="at" > Ẩm thực 
+                </div>
+                <div>
+                    <label for="note"> Ghi chú</label>
+                    <textarea name="note" row="5" cols="47" style="resize:none;"></textarea>
+                </div>
+            
+            <div>
+              <input class="button" type="submit" value="Đăng ký">
+            </div>
+      
+          </form>
+      
+        </div>
+</body>
+</html>

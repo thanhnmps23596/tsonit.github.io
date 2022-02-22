@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 bài 1</title>
+    <style>
+ body {
+  background-color: #c0c0c0;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: auto;
+  min-block-size: 500px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.align {
+  display: grid;
+  place-items: center;
+  padding-top:80px;
+}
+.button {
+  background-color: #f95252;
+  color: #fff;
+  float:left;
+  padding: 4px 24px;
+  margin:20px;
+  outline:none;
+  border:none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px #f95252;
+}
+.button:hover {
+  background-color: #b80303;
+}
+.button:disabled{
+    color:#eb9494;
+    box-shadow: inset 0 0 20px gray;
+}
+hr{
+    clear:both;
+}
+.reg {
+  width: 400px;
+}
+
+.reg_header {
+  background-color: #f95252;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  padding: 1px 30px;
+}
+.reg_form {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #777;
+  display: grid;
+ gap: 20px; /*cho cái form nó rộng ra*/ 
+  padding: 20px 26px;
+}
+
+.reg input {
+  border-radius: 1px;
+}
+
+.reg input[type="text"],
+.reg input[type="password"], .reg input[type="sex"],
+.reg input[type="image"], .reg input[type="quoctich"],
+.reg input[type="sothich"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 94%;
+  border-radius: 4px;
+}
+.quoctich , .image{
+     border-radius: 10px;
+     margin: 2px;
+}
+.reg input[type="submit"] {
+  display: block;
+  border-radius: 10px;
+}
+#hu:focus{
+background-color:yellow;
+box-shadow:0 0 3px red;
+border:1px solid yellow
+}
+    </style>
+</head>
+<body>
+    
+
+    <body class="align">
+        <div class="reg">
+          <div class="reg_header">
+            <h2>REG</h2>
+          </div>
+      
+          <form action="#" class="reg_form" method="POST" enctype="multipart/form-data">
+      
+            <div>
+              <label for="name">Họ và tên</label>
+              <input type="text"  id="hu" name="email" placeholder="Nguyễn Thành Sơn" tabindex="1">
+            </div>
+      
+            <div>
+                <label for="quoctich" >Quốc tịch</label>
+                <input type="text" name="quoctich" value ="Việt Nam" readonly>
+            </div>
+                <div>
+                    <label for="note"> Ghi chú</label>
+                    <textarea name="note" id="hu" row="5" cols="47" style="resize:none;" tabindex="2"></textarea>
+                </div>
+            
+            <div>
+              <input class="button" type="submit" value="Thêm" tabindex="3">
+             
+              <input class="button" type="submit" value="Sửa" tabindex="4">
+              <input class="button" type="submit" value="Xóa" disabled>
+            </div>
+      
+          </form>
+      
+        </div>
+</body>
+</html>
